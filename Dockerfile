@@ -2,7 +2,7 @@ FROM vitess/lite
 RUN mkdir -p $VTDATAROOT/tmp
 RUN chown -R vitess /vt
 RUN chmod -R 777 /vt
-RUN chmod -R 777 $VTDATAROOT/tmp
+RUN chmod -R 777 $VTDATAROOT
 
 EXPOSE 15000
 EXPOSE 15999
